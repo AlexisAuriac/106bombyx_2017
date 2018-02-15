@@ -12,7 +12,7 @@ def error(argv):
         for i in argv:
             if i.isnumeric() is False:
                 return 84
-        if int(argv[1]) >= int(argv[2]):
+        if int(argv[1]) > int(argv[2]):
             return 84
         return 0
     else:
