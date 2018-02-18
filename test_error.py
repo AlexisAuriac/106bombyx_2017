@@ -24,3 +24,5 @@ class ErrorTest(unittest.TestCase):
     def test_start_end(self):
         arg = ["10", "100", "90"]
         self.assertEqual(error(arg), 84)
+        arg = ["10", "100", "100"]
+        self.assertEqual(error(arg), 0)
